@@ -1,0 +1,46 @@
+{%  load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootcamp Blog</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/blog.css" %}">
+</head>
+<body>
+
+            <div id="masthead">
+                <div class="container">
+                    <div class="row">
+                        <h1> stack
+                        <p id="logo class="Lead">The trials of a bootcamp devloper</p>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            {%  block content %}
+                            {%  endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+<footer>
+    <div class="conatiner"></div>
+</footer>
+<!-- script referances -->
+<script
+    src="http:/>/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
